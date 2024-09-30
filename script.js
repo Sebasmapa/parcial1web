@@ -1,22 +1,13 @@
-function validateLogin() {
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
-
-    if (username === "mor_2314" && password === "83r5^_") {
-        alert("Login correcto. Redirigiendo a la página de productos...");
-        window.location.href = "productos.html"; // Cambia a la página de productos
-    } else {
-        alert("Usuario o contraseña incorrectos. Inténtalo de nuevo.");
-    }
-    return false; // Evita que el formulario se envíe
-}
-
 // Cargar productos al iniciar la página
-document.addEventListener('DOMContentLoaded', loadProducts);
+document.addEventListener('DOMContentLoaded', () => {
+    loadProducts(); // Llama a la función sin pasar ninguna categoría
+});
 
 // Función para cargar productos de la API
 async function loadProducts(category = "") {
     let url = 'https://fakestoreapi.com/products';
+    
+    // Si hay una categoría específica, ajusta la URL
     if (category) {
         url += `/category/${category}`;
     }
@@ -37,7 +28,7 @@ function displayProducts(products) {
 
     products.forEach(product => {
         const productCard = `
-            <div class="col-md-3">
+            <div class="col-sm-6 col-md-3">
                 <div class="card h-100">
                     <img src="${product.image}" class="card-img-top" alt="${product.title}">
                     <div class="card-body d-flex flex-column">
@@ -74,6 +65,5 @@ function filterProducts() {
 // Función para simular el cierre de sesión
 function logout() {
     alert("Sesión cerrada. Volviendo al login...");
-    window.location.href = "index.html"; // Cambia a la página de inicio de sesión
+    window.location.href = "index.html"; 
 }
-
