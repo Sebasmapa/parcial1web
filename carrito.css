@@ -1,0 +1,45 @@
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+h1 {
+    color: #333;
+}
+
+h2, h3, h4 {
+    color: #4b5be8;
+}
+
+/* Encabezado */
+header {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/* Tabla */
+table th, table td {
+    vertical-align: middle;
+    color: #333;
+}
+
+/* Username en el carrito */
+#username {
+    color: #4b5be8;
+}
+
+/* Botón de salir */
+button.btn.btn-secondary {
+    background-color: #e74c3c; 
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 7px;
+    transition: background-color 0.3s;
+}
+
+button.btn.btn-secondary:hover {
+    background-color: #c0392b;
+}

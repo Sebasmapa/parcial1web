@@ -1,0 +1,74 @@
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Encabezado */
+header h1 {
+    color: #333;
+}
+
+header .btn {
+    background-color: #4b5be8;
+    color: #fff;
+    border: none;
+}
+
+header .btn:hover {
+    background-color: #3a4ac7;
+}
+
+/* Navegación de categorías */
+.nav-pills .nav-link {
+    background-color: #4b5be8;
+    color: #fff;
+    padding: 5px 10px; 
+    font-size: 14px;  
+    margin-right: 10px; 
+    margin-bottom: 10px; 
+    border-radius: 5px;
+}
+
+.nav-pills .nav-link:hover {
+    background-color: #3a4ac7;
+}
+
+/* Estilo de las tarjetas de productos */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.card-title {
+    color: #333;
+}
+
+.card-body {
+    background-color: #fff;
+}
+
+.card .btn-warning {
+    background-color: #4b5be8;
+    color: #fff;
+    border: none;
+}
+
+.card .btn-warning:hover {
+    background-color: #3a4ac7;
+}
+
+/* Botón de salir */
+button.btn.btn-secondary {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 7px;
+    transition: background-color 0.3s;
+}
+
+button.btn.btn-secondary:hover {
+    background-color: #c0392b; 
+}

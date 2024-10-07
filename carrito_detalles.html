@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="carrito_detalles.css">
+    <title>Shop Online - Detalles del Carrito</title>
+</head>
+<body>
+    <div class="container-fluid mt-4">
+        <!-- Encabezado -->
+        <header class="d-flex justify-content-between align-items-center mb-4">
+            <h1>Shop Online</h1>
+            <h2 class="mx-auto">Bienvenido: david morrison</h2>
+            <button class="btn btn-secondary" onclick="logout()">Salir</button>
+        </header>
+
+        <!-- Detalles del Pedido -->
+        <h4 class="text-center">Detalles del Pedido</h4>
+        <table class="table table-bordered">
+            <thead class="thead-light">
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Valor</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody id="detalle-carrito-list">
+                <!-- Productos cargados dinámicamente -->
+            </tbody>
+        </table>
+        <h5 class="text-right">Total: <span id="total-pedido">$0.00</span></h5>
+    </div>
+
+    <!-- Sección de botones -->
+    <div class="text-center mt-4">
+        <button class="btn btn-success" onclick="updateCart()">Actualizar</button>
+        <button class="btn btn-primary" onclick="confirmOrder()">Confirmar</button>
+        <button class="btn btn-secondary" onclick="continueShopping()">Seguir Comprando</button>
+    </div>
+</div>
+
+<script>
+    function updateCart() {
+        alert("Funcionalidad de actualizar pendiente.");
+    }
+
+    function confirmOrder() {
+        alert("Funcionalidad de confirmar pendiente.");
+    }
+
+    function continueShopping() {
+        window.location.href = 'productos.html';
+    }
+</script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="carrito_detalles.js"></script>
+</body>
+</html>
