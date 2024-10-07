@@ -17,12 +17,10 @@ function handleLogin(event) {
     .then(res => res.json())
     .then(json => {
         if (json.token) {
-            // Login exitoso, redirige a la página de productos
             alert("Inicio de sesión exitoso");
             sessionStorage.setItem('authToken', json.token); // Guarda el token en el sessionStorage
             window.location.href = 'productos.html';
         } else {
-            // Si el inicio de sesión no es exitoso, muestra un mensaje de error
             alert("Usuario o contraseña incorrectos");
         }
     })
